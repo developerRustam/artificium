@@ -38,7 +38,7 @@ function chatTop(title:any) {
     </div>
   `;
 }
-export function chatTopTwo(title:string = 'Orbital Oddysey') {
+export function chatTopTwo(title:string = 'Orbital Odyssey') {
   let projects:any = data.projects;
   projects = projects[title].category;
   let htmlCategory:string = '<div class="chat-top chat-top-two"> <div class="chat-top-items">';
@@ -71,7 +71,7 @@ function chatInput() {
   
   `;
 }
-function messages(title:string ='Orbital Oddysey', category:number = 0) {
+function messages(title:string ='Orbital Odyssey', category:number = 0) {
   if (data.projects[title].category.length) {
     let chat:any = data.projects[title]?.category[category].chat.Iuser;
     let output = [];
@@ -194,6 +194,6 @@ export function chatTemplate(data:string) {
             </div>
             ${chatInput()}
         </div>
-        <div class = "warm-text" data-action='warm-text'> Coped text</div>
+        <div class = "warm-text" data-action='warm-text'>Text copied</div>
   `;
 }
