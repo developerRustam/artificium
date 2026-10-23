@@ -44,7 +44,7 @@ function opinionAuth() {
 
 function authBackground(date:number = 1) {
   return `
-  <img class="authorization-background__img" src="img/${date == 1 ? 'Illustration.png' : 'Illustration-auth.jpg' }" alt="background">
+  <img class="authorization-background__img" src="img/${date == 1 ? 'Illustration.webp' : 'Illustration-auth.webp' }" alt="background">
     ${date != 1 ? authBackgroundText() : ''}
   `;
 }
