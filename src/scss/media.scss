@@ -253,4 +253,110 @@
     .access-users-in {
         margin-left: 22%;
     }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container:has(> .menu) {
+        display: block;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .chat {
+        width: 100%;
+        min-width: 0;
+
+        > .chat-top:first-child > .chat-top {
+            display: none;
+        }
+
+        &-top {
+            padding: 16px;
+
+            &-two {
+                height: 68px;
+                overflow-x: auto;
+            }
+
+            &-items {
+                gap: 20px;
+                white-space: nowrap;
+            }
+
+            &__add {
+                right: 16px;
+                top: 21px;
+            }
+
+            &-name {
+                min-width: 0;
+
+                &__header {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+
+                &__text {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        &-input {
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+            width: auto;
+            max-width: none;
+            height: 64px;
+            padding: 16px;
+
+            &__send {
+                width: 100%;
+                padding-left: 16px;
+            }
+
+            &-icons {
+                max-width: 56px;
+                gap: 12px;
+            }
+        }
+    }
+
+    .send {
+        &-items {
+            height: calc(100vh - 230px);
+            padding: 0 12px 84px;
+            box-sizing: border-box;
+        }
+
+        &-item {
+            margin-right: 0;
+        }
+
+        &-user {
+            &__logo {
+                margin-right: 12px;
+            }
+
+            &__copy {
+                right: 0;
+            }
+        }
+
+        &-text {
+            margin-left: 0;
+            margin-top: 12px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
 }
